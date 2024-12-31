@@ -102,12 +102,12 @@ body {
 /* Main Content Styles */
 main {
     padding: 3rem 0;
-    background: #ffffff; /* White background for main content */
+    background: #ffffff;
     border-radius: 10px;
     margin: 2rem 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    animation: slideIn 1s ease-out;
 }
+
 
 section {
     margin-bottom: 3rem;

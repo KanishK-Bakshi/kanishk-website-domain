@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanishk Bakshi - News and Blog</title>
+    <link rel="icon" type="image/png" href="Images\Favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this links to your CSS file -->
+    <style>
+        /* Minimal CSS for boxes */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures 1 to 2 columns */
+            gap: 20px;
+        }
+
+        .news-card {
+            background: #f9f9f9;
+            border: 2px solid #007BFF; /* Blue outline for the box */
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            position: relative; /* Needed for absolute positioning of date box */
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Date Box Styles */
+        .date-box {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: white; /* Set background to white */
+            color: #007BFF; /* Blue text for contrast */
+            padding: 5px 10px;
+            font-size: 0.85em;
+            border: 2px solid #007BFF; /* Blue border outline */
+            border-radius: 5px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .news-card:hover .date-box {
+            opacity: 1; /* Makes the date box fully visible when hovering over the card */
+        }
+
+        /* News Content Styles */
+        .news-card .news-content {
+            margin-top: 35px; /* Add space between the date box and content */
+        }
+
+        .news-title {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .news-description {
+            font-size: 0.95em;
+            color: #555;
+            margin-bottom: 16px;
+        }
+
+        .news-card object {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+        }
+
+        /* Limit to 2 cards per row for larger screens */
+        @media (min-width: 600px) {
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr); /* Maximum 2 cards per row */
+            }
+        }
+
+        /* Ensure a minimum of 1 card per row for smaller screens */
+        @media (max-width: 599px) {
+            .news-grid {
+                grid-template-columns: 1fr; /* Minimum 1 card per row */
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1><a href="index.html">Kanishk Bakshi</a></h1>
+        <p>News and Blogs</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main-content">
+    <section id="news" class="news-section">
+        <h2 class="section-title">Latest News and Blogs</h2>
+        <div class="news-grid">
+            <!-- News Article 2 -->
+            <article class="news-card">
+                <div class="date-box">12 Dec 2023</div>
+                <div class="news-content">
+                    <h3 class="news-title">Paper Presentation at Kathmandu University, Nepal</h3>
+                    <p class="news-description">I am thrilled to announce that I will be presenting one of my papers at the International Symposium at Kathmandu University, Nepal, on 18th April 2025. The symposium focuses on Artificial Intelligence for disaster mitigation in the Himalayan region. I will be attending alongside my mentor, <strong>Dr. Amitansu Pattanaik</strong>.</p>
+                </div>
+            </article>
+
+            <!-- News Article 1 -->
+            <article class="news-card">
+                <div class="date-box">20 Dec 2023</div>
+                <div class="news-content">
+                    <object data="Files/Certificate_MTQUAN_Recognised.pdf" type="application/pdf">
+                        <p>Your browser does not support PDFs. <a href="Files/Certificate_MTQUAN_Recognised.pdf" download>Download Certificate</a></p>
+                    </object>
+                    <h3 class="news-title">Certificate of Reviewing</h3>
+                    <p class="news-description">On 20 December, I was awarded a certificate of reviewing, recognizing my contributions to the academic community through insightful peer reviews.</p>
+                </div>
+            </article>
+
+            <!-- News Article 3 -->           
+
+            <article class="news-card">
+                <div class="date-box">02-05 July 2024</div>
+                <div class="news-content">
+                    <h3 class="news-title">Residential Training Program on Low Carbon Pathways for Industrial Sectors</h3>
+                    <p class="news-description">
+                        I had the privilege of attending the "Residential Training Program on Low Carbon Pathways for Industrial Sectors," held at the Anil Agarwal Environment Training Institute (AAETI) in Nimli, Rajasthan, from July 02-05, 2024. This program focused on the need for industrial sectors to adopt low-carbon pathways to help India meet its 2030 carbon emission reduction target.
+                    </p>
+                    <p class="news-description">
+                        The training program aimed to provide participants with the necessary knowledge and skills to enable industries, regulators, and professionals to meet their sustainability goals. The program covered critical decarbonization strategies, including circularity, resource efficiency, carbon capture, utilization and storage (CCUS), and adopting cleaner fuels.
+                    </p>
+                    <p class="news-description">
+                        Topics discussed included the future of carbon capture, cleaner fuels like gas, biomass, and hydrogen, the role of circularity in reducing greenhouse gas emissions, energy-efficient technologies, and the role of renewable energy to reduce dependence on coal power. The course was particularly insightful for understanding sector-specific measures to reduce emissions and the potential of international and domestic climate finance for cleaner technologies.
+                    </p>
+                    <p class="news-description">
+                        This training helped me gain valuable insights into creating low-carbon pathways for large-scale industries, and it contributed to my overall research work as a <strong>Research Fellow at DRDO</strong> .
+                    </p>
+            
+                    <!-- Add the image from the event -->
+                    <div class="news-image">
+                        <img src="Images/Low Carbon Pathways Certificate.jpg" alt="Low Carbon Pathways Training ID Card" width="100%" height="300px">
+                    </div>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="date-box">06-07 Jun 2024</div>
+                <div class="news-content">
+                    <h3 class="news-title">Certificate of Participation in "Chemical & Industrial Safety: Disaster Risk Reduction"</h3>
+                    <p class="news-description">I am honored to have participated in the "Training Programme on Chemical & Industrial Safety: Disaster Risk Reduction," organized by FICCI in collaboration with the National Institute of Disaster Management (NIDM), Ministry of Home Affairs, Government of India. The event took place on June 06-07, 2024, at FICCI, New Delhi. This training focused on disaster risk reduction and the role of AI in enhancing safety measures.</p>
+                    <p class="news-description">We explored key aspects of chemical and industrial safety, with discussions on how AI technologies can be leveraged for disaster management. The training was led by experts including Prof. (Dr) Anil Kumar Gupta, Head of Division at NIDM, and Sumeet Gupta, Assistant Secretary General at FICCI.</p>
+            
+                    <!-- Add the image of the ID card with matching size as the PDF viewer -->
+                    <div class="news-image">
+                        <img src="Images/Chemical and Industry Safety ID card.jpg" alt="Chemical and Industrial Safety ID Card" width="50%" height="300px">
+                    </div>
+            
+                    <object data="Files/Training Programme on CHemical and Industrial Safety Disaster Risk reduction.pdf" type="application/pdf" width="100%" height="300px">
+                        <p>Your browser does not support PDFs. <a href="Files/Training Programme on CHemical and Industrial Safety Disaster Risk reduction.pdf" download>Download Certificate</a></p>
+                    </object>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <div class="date-box">29 May 2024</div>
+                <div class="news-content">
+                    <h3 class="news-title">Cold Chain and Logistics Summit: Navigating The Future of Cold Chain Logistics</h3>
+                    <p class="news-description">
+                        The Federation of Indian Chambers of Commerce and Industry (FICCI) organized the Cold Chain and Logistics Summit: Navigating The Future of Cold Chain Logistics on May 29, 2024, at FICCI, Federation House, New Delhi.
+                    </p>
+                    <p class="news-description">
+                        The objective of the summit was to encourage cooperation and innovation in establishing an integrated, sustainable, and effective cold chain ecosystem for India’s perishable goods industry. The discussions focused on the development of sustainable infrastructure to increase energy efficiency, reduce waste, and ensure the integrity and safety of temperature-sensitive goods in supply chain management. 
+                    </p>
+                    <p class="news-description">
+                        Participants had the opportunity to learn about the latest trends and advancements in cold chain technology and logistics, as well as engage in networking opportunities with key stakeholders. The summit served as an active platform for discussing best practices and strategies to comprehend the technologies and trends that will shape the future of cold chain logistics.
+                    </p>
+            
+                    <!-- Add the image of the ID card with matching size -->
+                    <div class="news-image">
+                        <img src="Images/Cold chain and logistics ID Card.jpg" alt="Cold Chain and Logistics ID Card" width="50%" height="300px">
+                    </div>
+                </div>
+            </article>
+
+            <!-- News Article 4 -->
+            
+            
+            <article class="news-card">
+                <div class="date-box">August 7, 2024</div>
+                <div class="news-content">
+                    <h3 class="news-title">Completion of Introduction to Quantum Information by KAIST (Coursera)</h3>
+                    <p class="news-description">I am excited to share that I have successfully completed the *Introduction to Quantum Information* course, offered by the Korea Advanced Institute of Science and Technology (KAIST) through Coursera. I completed the course on August 7, 2024, with approximately 10 hours of study.</p>
+                    
+                    <p class="news-description">This course provided an insightful introduction to quantum information theory, covering fundamental concepts such as quantum bits (qubits), quantum entanglement, quantum measurement, and the basics of quantum algorithms. It has equipped me with a deeper understanding of the foundational principles that power quantum computing and information science.</p>
+            
+                    <p class="news-description">By completing this course, I have enhanced my knowledge of quantum mechanics and how it is applied to information theory, which will support my research in quantum computing and quantum artificial intelligence.</p>
+            
+                    <object data="Files/Intro to Quantum information.pdf" type="application/pdf" width="100%" height="300px">
+                        <p>Your browser does not support PDFs. <a href="Files/Intro to Quantum information.pdf" download>Download Certificate</a></p>
+                    </object>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="date-box">23 Mar 2024</div>
+                <div class="news-content">
+                    <h3 class="news-title">Paper Selected for Special Issue of IJAMS</h3>
+                    <p class="news-description">On 23rd Mar 2024, I am honored to announce that my paper, titled "Deep Learning for Detecting Manufacturing Defects Using Convolutional Neural Networks" (RAISE2023 Id: 135), has been selected for a special issue of the *International Journal of Advanced Mechatronic Systems*. The paper was selected for its exceptional research and will be included in the special issue on “RAISE2023 Mechatronics Automation and Cyber Physical Manufacturing Systems”.</p>
+                    <object data="Files/Selection of My paper.pdf" type="application/pdf" width="100%" height="300px">
+                        <p>Your browser does not support PDFs. <a href="Files/Selection of My paper.pdf" download>Download the selected paper PDF</a></p>
+                    </object>
+                </div>
+            </article> 
+
+            <article class="news-card">
+                <div class="date-box">18 Nov 2023</div>
+                <div class="news-content">
+                    <h3 class="news-title">Certificate of Participation at AICERA: ICIS 2023</h3>
+                    <p class="news-description">I am pleased to share that my paper, titled "Predicting Credit Card Defaults with Machine Learning," co-authored with S Vinila Jinny, was presented at the International Conference on Intelligent Systems (AICERA: ICIS 2023) held at Amal Jyothi College of Engineering, Kanjirappally, Kerala, India from 16th to 18th November 2023. I am grateful for the opportunity to participate in this prestigious conference held by IEEE Kerala Section.</p>
+                    <object data="Files/AICERA CERTIFICATE OF PRESENTATION.pdf" type="application/pdf" width="100%" height="300px">
+                        <p>Your browser does not support PDFs. <a href="Files/AICERA CERTIFICATE OF PRESENTATION.pdf" download>Download Certificate</a></p>
+                    </object>
+                </div>
+            </article>
+
+            <article class="news-card">
+                <div class="date-box">July 5, 2022</div>
+                <div class="news-content">
+                    <h3 class="news-title">Completion of Machine Learning Specialization by Andrew Ng (Coursera)</h3>
+                    <p class="news-description">I am excited to announce the completion of the *Machine Learning Specialization* on Coursera, offered by Stanford University and DeepLearning.AI. The specialization was taught by renowned instructors Andrew Ng, Aarti Bagul, Geoff Ladwig, and Eddy Shyu. I completed the program on July 5, 2022, after approximately 2 months of study (10 hours per week).</p>
+                    
+                    <p class="news-description">This specialization provided a comprehensive understanding of machine learning concepts, including supervised learning (linear regression, logistic regression, decision trees, and neural networks), unsupervised learning (clustering, anomaly detection), recommender systems, and reinforcement learning. It equipped me with practical skills to apply these concepts to real-world problems, and I gained hands-on experience using tools like NumPy, scikit-learn, and TensorFlow.</p>
+            
+                    <p class="news-description">The key courses completed include:</p>
+                    <ul class="news-list">
+                        <li><strong>Supervised Machine Learning: Regression and Classification</strong></li>
+                        <li><strong>Advanced Learning Algorithms</strong></li>
+                        <li><strong>Unsupervised Learning, Recommenders, and Reinforcement Learning</strong></li>
+                    </ul>
+                    
+                    <p class="news-description">This specialization has significantly enhanced my knowledge of machine learning, and I'm excited to apply these skills in AI-driven problem-solving projects.</p>
+                    
+                    <object data="Files/Machine learning specialization certificate.pdf" type="application/pdf" width="100%" height="300px">
+                        <p>Your browser does not support PDFs. <a href="Files/Machine learning specialization certificate.pdf" download>Download Certificate</a></p>
+                    </object>
+                </div>
+            </article>
+            
+            <article class="news-card">
+                <div class="date-box">November 20, 2022</div>
+                <div class="news-content">
+                    <h3 class="news-title">Completion of Deep Learning Specialization by Andrew Ng (Coursera)</h3>
+                    <p class="news-description">I am thrilled to announce the successful completion of the *Deep Learning Specialization* on Coursera, offered by DeepLearning.AI. The specialization was taught by experts Andrew Ng, Kian Katanforoosh, Younes Bensouda Mourri, and others. I completed this program on November 20, 2022, after approximately 3 months of study (10 hours per week).</p>
+                    
+                    <p class="news-description">The specialization covered various advanced deep learning topics such as Neural Networks, Convolutional Neural Networks (CNNs), Sequence Models (including RNNs and LSTMs), and Transformers. The course also delved into optimization techniques like Dropout, BatchNorm, and Xavier initialization, all applied using Python and TensorFlow. These skills have equipped me to solve real-world challenges such as speech recognition, natural language processing, and machine translation.</p>
+            
+                    <p class="news-description">The key courses completed in this specialization include:</p>
+                    <ul class="news-list">
+                        <li><strong>Neural Networks and Deep Learning</strong></li>
+                        <li><strong>Improving Deep Neural Networks: Hyperparameter Tuning, Regularization, and Optimization</strong></li>
+                        <li><strong>Convolutional Neural Networks</strong></li>
+                        <li><strong>Sequence Models</strong></li>
+                        <li><strong>Structuring Machine Learning Projects</strong></li>
+                    </ul>
+                    
+                    <p class="news-description">This specialization has significantly boosted my deep learning expertise, preparing me for advanced AI applications across various industries.</p>
+            
+                    <object data="Files/Deep learning specialization certificate.pdf" type="application/pdf" width="100%" height="300px">
+                        <p>Your browser does not support PDFs. <a href="Files/Deep learning specialization certificate.pdf" download>Download Certificate</a></p>
+                    </object>
+                </div>
+            </article>        
+                        
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 Kanishk Bakshi. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
