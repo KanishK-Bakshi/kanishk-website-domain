@@ -4,26 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanishk Bakshi - Academic Mentors</title>
-    <link rel="icon" type="image/png" href="Images\Favicon.png">
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Styles for timeline appearance */
-        .timeline {
-            font-style: italic;
-            color: #666;
-            margin-top: 5px;
+        /* Extra mentor-list spacing for this page */
+        .mentor-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
         }
+        .mentor-list .card {
+            margin-bottom: 2rem;
+        }
+        @media (max-width: 600px) {
+            .mentor-list .card {
+                padding: 1rem;
+            }
+        }
+        
     </style>
 </head>
 <body>
     <header>
         <div class="container">
             <h1><a href="index.html">Kanishk Bakshi</a></h1>
-            <h3><a href="index.html">Academic Mentors</a></h3>
+            <h3 style="font-weight:400; margin-top:0.5rem;">Academic Mentors</h3>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li> <!-- Link back to homepage -->
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="publications.html">Publications</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -32,56 +41,49 @@
     </header>
 
     <main>
-        <section class="container">
+        <section class="container" style="max-width: 700px;">
             <h2>My Academic Mentors</h2>
-            <p>I have had the privilege of working with and being mentored by distinguished individuals in the fields of Computer Science, Quantum Computing, and Artificial Intelligence. Here are my academic mentors, along with the timeline of our professional relationship:</p>
-
-            <ul>
-                <li>
-                    <strong>Dr. Praveen Kumar Reddy Maddikunta</strong> <br>
-                    Professor, VIT Vellore <br>
-                    <a href="mailto:praveenkumarrdeddy@vit.ac.in"><i class="fas fa-envelope"></i> Email</a> | 
-                    <a href="https://sites.google.com/view/praveenkumarreddy/home" target="_blank"><i class="fas fa-link"></i> Profile</a>
+            <p style="text-align:center; margin-bottom:2.5rem;">
+                I have had the privilege of working with and being mentored by distinguished individuals in the fields of Computer Science, Quantum Computing, and Artificial Intelligence. Here are my academic mentors, along with the timeline of our professional relationship:
+            </p>
+            <ul class="mentor-list">
+                <li class="card">
+                    <strong style="font-size:1.2rem;">Dr. Xiongfeng Ma</strong>
+                    <div style="margin-bottom:0.3rem;">Professor, Tsinghua University</div>
+                    <div style="margin-bottom:0.3rem;">Advisor - Master's Thesis</div>
+                    <div style="margin-bottom:0.5rem;">
+                        <a href="mailto:xma@tsinghua.edu.cn"><i class="fas fa-envelope"></i> Email</a> |
+                        <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/MaXiongfeng.htm" target="_blank"><i class="fas fa-link"></i> Profile</a>
+                    </div>
+                    <p class="timeline">Mentorship: 2025 - Present</p>
+                </li>
+                <li class="card">
+                    <strong style="font-size:1.2rem;">Dr. Amitansu Pattanaik</strong>
+                    <div style="margin-bottom:0.3rem;">Senior Scientist, DRDO</div>
+                    <div style="margin-bottom:0.5rem;">
+                        <a href="mailto:amitansu@yahoo.com"><i class="fas fa-envelope"></i> Email</a> |
+                        <a href="https://www.linkedin.com/in/amitanshu-pattanaik-a1a9b012/" target="_blank"><i class="fas fa-link"></i> Profile</a>
+                    </div>
                     <p class="timeline">Mentorship: 2024 - Present</p>
                 </li>
-                <br>
-                <li>
-                    <strong>Dr. Amitansu Pattanaik</strong> <br>
-                    Senior Scientist, DRDO <br>
-                    <a href="mailto:amitansu@yahoo.com"><i class="fas fa-envelope"></i> Email</a> | 
-                    <a href="https://www.linkedin.com/in/amitanshu-pattanaik-a1a9b012/" target="_blank"><i class="fas fa-link"></i>Profile</a>
-                    <p class="timeline">Mentorship: 2024 - Present</p>
-                </li>
-                <br>
-                <li>
-                    <strong>Dr. Kathiravan Srinivasan</strong> <br>
-                    Professor, VIT Vellore <br>
-                    <a href="mailto:kathiravan.srinivasan@vit.ac.in"><i class="fas fa-envelope"></i> Email</a> | 
-                    <a href="https://sites.google.com/a/ems.niu.edu.tw/kathiravans" target="_blank"><i class="fas fa-link"></i> Profile</a>
+                <li class="card">
+                    <strong style="font-size:1.2rem;">Dr. Kathiravan Srinivasan</strong>
+                    <div style="margin-bottom:0.3rem;">Professor, VIT Vellore</div>
+                    <div style="margin-bottom:0.3rem;">Advisor - Bachelor Thesis</div>
+                    <div style="margin-bottom:0.5rem;">
+                        <a href="mailto:kathiravan.srinivasan@vit.ac.in"><i class="fas fa-envelope"></i> Email</a> |
+                        <a href="https://sites.google.com/a/ems.niu.edu.tw/kathiravans" target="_blank"><i class="fas fa-link"></i> Profile</a>
+                    </div>
                     <p class="timeline">Mentorship: 2023 - Present</p>
-                </li>
-                <br>
-                <li>
-                    <strong>Dr. S Vinila Jinny</strong> <br>
-                    Professor, VIT Vellore <br>
-                    <a href="mailto:vinilajinny.s@vit.ac.in"><i class="fas fa-envelope"></i> Email</a> | 
-                    <a href="https://scholar.google.co.in/citations?user=y809MU8AAAAJ&hl=en" target="_blank"><i class="fas fa-link"></i> Google Scholar Profile</a>
-                    <p class="timeline">Mentorship: 2022 - Present</p>
-                </li>
-                <br>
-                <li>
-                    <strong>Dr. Rekha Sharma</strong> <br>
-                    Professor & My Mother <br>
-                    <p class="timeline">Mentorship: 2004 - Always</p>
                 </li>
             </ul>
         </section>
     </main>
 
-    <!-- <footer>
+    <footer>
         <div class="container">
             <p>&copy; 2024 Kanishk Bakshi. All rights reserved.</p>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>

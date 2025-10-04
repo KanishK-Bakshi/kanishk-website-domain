@@ -4,22 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Kanishk Bakshi's academic portfolio showcasing research in Quantum Computing, Machine Learning, and Deep Learning. Explore research publications, academic mentors, and educational background.">
-    <link rel="icon" type="image/png" href="Images\Favicon.png">
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
     <meta name="keywords" content="Kanishk Bakshi, Quantum Computing, Machine Learning, Deep Learning, Research Scholar, Academic Portfolio, VIT Vellore">
     <meta name="author" content="Kanishk Bakshi">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.kanishkbakshi-portfolio.com">
     <title>Kanishk Bakshi - Academic Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
     <style>
-        #visitor-count {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .subtitle {
+            color: var(--secondary-color);
+            font-weight: 400;
+            margin-top: 0.3rem;
+            margin-bottom: 0.7rem;
+            font-size: 1.3rem;
+            text-align: left;
+        }
+        .hero {
+            background: linear-gradient(135deg, #e6eff3, #d2e3e7);
+            border-radius: 12px;
+            padding: 2.5rem 2rem 2rem 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+            text-align: center;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #333;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+        .section-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+        .card-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+        }
+        .card-section {
+            flex: 1 1 320px;
+            background: linear-gradient(145deg, #ffffff, #f1f1f1);
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.09);
+            padding: 2rem 1.5rem;
+            margin-bottom: 2rem;
+            min-width: 320px;
+        }
+        .card-section h2 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            text-align: left;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        .card-section ul {
+            padding-left: 1.1rem;
+        }
+        .card-section li {
+            margin-bottom: 1.1rem;
+            font-size: 1.07rem;
+        }
+        .awards-list li {
+            margin-bottom: 1.3rem;
+        }
+        @media (max-width: 900px) {
+            .card-list {
+                flex-direction: column;
+                gap: 0;
+            }
+            .card-section {
+                min-width: unset;
+            }
+        }
+        footer {
+            background: #fff; /* Changed from var(--dark-background) to white */
+            color: #222;      /* Use dark text for contrast */
+            text-align: center;
+            padding: 2rem 0 1.2rem 0;
+            margin-top: 2.5rem;
+            border-radius: 10px 10px 0 0;
+            font-size: 1.05rem;
+            box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+        }
+        footer p {
+            margin: 0;
+            font-style: italic;
+            line-height: 1.7;
         }
     </style>
     <!-- Structured Data -->
@@ -28,7 +106,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Kanishk Bakshi",
-      "jobTitle": "Undergraduate Research Scholar",
+      "jobTitle": "Graduate Research Scholar",
       "affiliation": {
         "@type": "Organization",
         "name": "Vellore Institute of Technology"
@@ -39,15 +117,16 @@
         "https://orcid.org/0009-0000-6602-1283"
       ],
       "url": "https://kanishkbakshi.in",
-      "description": "Kanishk Bakshi is an undergraduate research scholar specializing in Quantum Computing, Machine Learning, and Deep Learning."
+      "description": "Kanishk Bakshi is a Graduate research scholar specializing in Quantum Computing, Machine Learning, and Deep Learning."
     }
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <h1><a href="index.html">Kanishk Bakshi</a></h1>
-            <p>Undergraduate Research Scholar</p>
+            <h3 style="font-weight:400; margin-top:0.5rem;">Graduate Research Scholar</h3>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -62,55 +141,55 @@
     </header>
 
     <main>
-        <section id="about" class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>Welcome to my academic portfolio. I am Kanishk Bakshi, an undergraduate research scholar specializing in Quantum Computing, Machine Learning, and Deep Learning. With a strong interest in AI and quantum technologies, I am focused on developing innovative solutions to complex problems in these fields.</p>
+        <section class="container hero" id="about">
+            <h2 style="color:var(--primary-color); margin-bottom:1.2rem;">
+                <i class="fas fa-user section-icon"></i> About Me
+            </h2>
+            <p>
+                Welcome to my academic portfolio. I am Kanishk Bakshi, a Graduate Research Scholar specializing in Quantum Computing, Machine Learning, and Deep Learning. With a strong interest in AI and quantum technologies, I am focused on developing innovative solutions to complex problems in these fields.
+            </p>
+        </section>
+
+        <section class="container card-list">
+            <div class="card-section">
+                <h2><i class="fas fa-graduation-cap section-icon"></i> Education</h2>
+                <ul>
+                    <li><strong>Master's</strong> in Computer Science and Engineering <br> Tsinghua University, Beijing, P.R.China (Aug 2025 - Sep 2027) </li>
+                    <li><strong>Bachelor of Technology</strong> in Computer Science and Engineering <br> Vellore Institute of Technology, Vellore, India (Aug 2021 - July 2025) <br> Minor: Information Security</li>
+                    <li><strong>Senior Secondary Education</strong> <br> Delhi Public School, Ambala, India (April 2006 - March 2021)</li>
+                </ul>
+            </div>
+            <div class="card-section">
+                <h2><i class="fas fa-flask section-icon"></i> Research Experience</h2>
+                <ul>
+                    <li><strong>Graduate Research Scholar</strong> - Institute of Interdisciplinary Sciences (IIIS), Tsinghua University, Beijing, P.R.China (Sep 2024 - Present)</li>
+                    <li><strong>Research Fellow</strong> - Defence Terrain Research Laboratory (DRDO), New Delhi, India (May 2024 - August 2024)</li>
+                    <li><strong>Undergraduate Research Scholar</strong> - Vellore Institute of Technology, Vellore, India (Oct 2022 - Present)</li>
+                    <li><strong>Reviewer</strong> - Elsevier (May 2024 - Present)</li>
+                </ul>
+            </div>
+            <div class="card-section">
+                <h2><i class="fas fa-award section-icon"></i> Awards and Honors</h2>
+                <ul class="awards-list">
+                    <li>
+                        <strong><a href="Files/Raman Research Award.pdf" target="_blank">Raman Research Award</a></strong> - This prestigious award was conferred by VIT Vellore in recognition of outstanding contributions to research. The award was granted for the manuscript titled 
+                        <em>"Advancements in Heart Disease Diagnosis: Harnessing Predictive Modeling Techniques for Cardiovascular Health Management."</em>  
+                        The research explores advanced machine learning techniques to enhance the accuracy of cardiovascular disease predictions, paving the way for better diagnostic tools.
+                    </li>
+                    <!-- <li>
+                        <strong>A P J Abdul Kalam Research Award</strong> - This award, presented by VIT Vellore, honors exceptional research contributions in the field of artificial intelligence and machine learning. 
+                        It recognizes innovative work that has significantly advanced technological applications and methodologies, reflecting a commitment to scientific excellence and societal impact.
+                    </li> -->
+                </ul>
             </div>
         </section>
-
-        <section id="education" class="container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bachelor of Technology</strong> in Computer Science and Engineering <br> Vellore Institute of Technology, Vellore, India (Aug 2021 - July 2025) <br> Minor: Information Security</li>
-                <li><strong>Senior Secondary Education</strong> <br> Delhi Public School, Ambala, India (April 2006 - March 2021)</li>
-            </ul>
-        </section>
-
-        <section id="research" class="container">
-            <h2>Research Experience</h2>
-            <ul>
-                <li><strong>Research Fellow</strong> - Defence Terrain Research Laboratory (DRDO), New Delhi, India (May 2024 - August 2024)</li>
-                <li><strong>Undergraduate Research Scholar</strong> - Vellore Institute of Technology, Vellore, India (Oct 2022 - Present)</li>
-                <li><strong>Reviewer</strong> - Elsevier (May 2024 - Present)</li>
-            </ul>
-        </section>
-
-        <section id="research" class="container">
-            <h2>Awards and Honors</h2>
-            <ul>
-                <li>
-                    <strong><a href="Files/Raman Research Award.pdf" target="_blank">Raman Research Award</a></strong> - <a href="Files/Raman Research Award.pdf" target="_blank">This prestigious award was conferred by VIT Vellore in recognition of outstanding contributions to research. The award was granted for the manuscript titled 
-                        <em>"Advancements in Heart Disease Diagnosis: Harnessing Predictive Modeling Techniques for Cardiovascular Health Management."</em>  
-                        The research explores advanced machine learning techniques to enhance the accuracy of cardiovascular disease predictions, paving the way for better diagnostic tools.</a>  
-                    
-                </li>
-                <li>
-                    <strong>A P J Abdul Kalam Research Award</strong> - This award, presented by VIT Vellore, honors exceptional research contributions in the field of artificial intelligence and machine learning. 
-                    It recognizes innovative work that has significantly advanced technological applications and methodologies, reflecting a commitment to scientific excellence and societal impact.
-                </li>
-            </ul>
-        </section>
-        
-
     </main>
 
-    <p>Unique Visitors:</p>
-    <a href='http://www.freevisitorcounters.com'>Free Counter</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=3170766151e60785907d17e07e6dae227c46fc11'></script>
-    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1269458/t/9"></script>
-
     <footer>
-        <p>"You are your own worst enemy. You waste precious time dreaming of the future instead of engaging in the present. Since nothing seems urgent to you, you are only half involved in what you do. The only way to change is through action and outside pressure." <br> ~Robert Greene, The 33 Strategies of War</p>
+        <p>
+            "You are your own worst enemy. You waste precious time dreaming of the future instead of engaging in the present. Since nothing seems urgent to you, you are only half involved in what you do. The only way to change is through action and outside pressure." <br>
+            <span style="font-size:1rem; color:var(--secondary-color);">~Robert Greene, The 33 Strategies of War</span>
+        </p>
     </footer>
 </body>
 </html>

@@ -4,42 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanishk Bakshi - Contact</title>
-    <link rel="icon" type="image/png" href="Images\Favicon.png">
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .contact-section h2 {
+            margin-top: 2rem;
+        }
+        .contact-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-section ul li {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+        }
+        .contact-section a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .contact-section a:hover {
+            color: var(--secondary-color);
+        }
+        .subtitle {
+            color: #fff;
+            font-weight: 400;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <h1><a href="index.html">Kanishk Bakshi</a></h1>
-            <h3><a href="index.html">Contact Me</a></h3>
+            <div class="subtitle">Contact Me</div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li> <!-- Link back to homepage -->
-                    <!-- <li><a href="publications.html">Publications</a></li> -->
+                    <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="container">
-            <h2>Email</h2>
-            <p><a href="mailto:kanishkbakshi@zohomail.in"><i class="fas fa-envelope"></i> kanishkbakshi@zohomail.in</a></p>
-
-            <h2>Other Platforms</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/kanishkbakshi/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://orcid.org/0009-0000-6602-1283" target="_blank"><i class="fas fa-id-card"></i> ORCID</a></li>
-                <li><a href="https://scholar.google.com/citations?user=wjg0PaYAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
-            </ul>
+        <section class="container" style="max-width: 600px;">
+            <div class="card" style="padding:2.5rem 2rem; margin-top:2.5rem;">
+                <h2 style="text-align:center; color:var(--primary-color); margin-bottom:1.5rem;">
+                    <i class="fas fa-paper-plane"></i> Get in Touch
+                </h2>
+                <div style="margin-bottom:1.5rem;">
+                    <span style="font-weight:500; color:var(--primary-color);"><i class="fas fa-envelope"></i> Email:</span>
+                    <a href="mailto:kanishkbakshi@zohomail.in" style="margin-left:0.5rem;">kanishkbakshi@zohomail.in</a>
+                </div>
+                <div style="background: #f5faff; border-left: 4px solid var(--primary-color); padding: 0.8rem 1rem; border-radius: 7px; margin-bottom:1.5rem; color:#333;">
+                    <i class="fas fa-info-circle" style="color:var(--primary-color);"></i>
+                    If you want to contact me in <b>China</b>, please use
+                    <a href="mailto:kanishkbakshi@zohomail.cn" style="color:var(--primary-color); font-weight:500;">kanishkbakshi@zohomail.cn</a>
+                </div>
+                <h3 style="margin-bottom:1rem; color:var(--primary-color);"><i class="fas fa-share-alt"></i> Other Platforms</h3>
+                <ul style="list-style:none; padding:0; margin:0;">
+                    <li style="margin-bottom:1rem;">
+                        <a href="https://www.linkedin.com/in/kanishkbakshi/" target="_blank">
+                            <i class="fab fa-linkedin" style="color:#0077b5;"></i> LinkedIn
+                        </a>
+                    </li>
+                    <li style="margin-bottom:1rem;">
+                        <a href="https://orcid.org/0009-0000-6602-1283" target="_blank">
+                            <i class="fas fa-id-card" style="color:#a6ce39;"></i> ORCID
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=wjg0PaYAAAAJ&hl=en" target="_blank">
+                            <i class="fas fa-graduation-cap" style="color:#4285f4;"></i> Google Scholar
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
-    <!-- <footer>
+    <footer>
         <div class="container">
             <p>&copy; 2024 Kanishk Bakshi. All rights reserved.</p>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>

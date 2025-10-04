@@ -4,17 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanishk Bakshi - Publications</title>
-    <link rel="icon" type="image/png" href="Images\Favicon.png">
+    <link rel="icon" type="image/png" href="Images/Favicon.png">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .pub-list {
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .pub-list li {
+            margin-bottom: 1.5rem;
+            padding: 1.2rem 1.5rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+            border: 1px solid #e0e0e0;
+            list-style: none;
+        }
+        .pub-list em {
+            color: var(--primary-color);
+            font-style: normal;
+            font-weight: 500;
+        }
+        @media (max-width: 700px) {
+            .pub-list li {
+                padding: 1rem;
+                font-size: 0.98rem;
+            }
+        }
+        .subtitle {
+            color: #fff;
+            font-weight: 400;
+            margin-top: 0.5rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <h1><a href="index.html">Kanishk Bakshi</a></h1>
-            <p>My Research Publications</p>
+            <h3 style="font-weight:400; margin-top:0.5rem;">My Research Publications</h3>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li> <!-- Link to return to homepage -->
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#journal">Journal Papers</a></li>
                     <li><a href="#conference">Conference Papers</a></li>
                     <li><a href="#preprints">Preprints</a></li>
@@ -27,42 +60,58 @@
     <main>
         <section id="journal" class="container">
             <h2>Journal Papers</h2>
-            <ul>
-                <li><strong>Knowledge Fusion Network (KFN): A Novel Multi-Network Feature Learning Approach</strong> <br><b>[In Review]</b></li>
-                <li><strong>Spatiotemporal Dynamics of High-Altitude Himalayan Lakes</strong> <br> <b>[In Review]</b> </li>
-                <li><strong>Qubit and Qutrit Based Quantum Neural Network: Enhancing Stock Market Prediction</strong> <br> <em>Nature - Scientific Reports</em> - <a href="https://www.nature.com/articles/s41598-025-09475-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20250806&utm_content=10.1038/s41598-025-09475-0" target="_blank">Read Here</a></li>
-                <li><strong>Advancements in Heart Disease Diagnosis: Harnessing Predictive Modeling Techniques</strong> <br> <em>Wiley - Advances in Public Health</em> - <a href="https://onlinelibrary.wiley.com/doi/10.1155/2024/5300908" target="_blank">Read Here</a></li>
-                            </ul>
+            <ul class="pub-list">
+                <li><strong>Knowledge Fusion Network (KFN): A Novel Multi-Network Feature Learning Approach</strong><br><b>[In Review]</b></li>
+                <li><strong>Spatiotemporal Dynamics of High-Altitude Himalayan Lakes</strong><br><b>[In Review]</b></li>
+                <li><strong>Qubit and Qutrit Based Quantum Neural Network: Enhancing Stock Market Prediction</strong><br>
+                    <em>Nature - Scientific Reports</em> –
+                    <a href="https://www.nature.com/articles/s41598-025-09475-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20250806&utm_content=10.1038/s41598-025-09475-0" target="_blank">Read Here</a>
+                </li>
+                <li><strong>Advancements in Heart Disease Diagnosis: Harnessing Predictive Modeling Techniques</strong><br>
+                    <em>Wiley - Advances in Public Health</em> –
+                    <a href="https://onlinelibrary.wiley.com/doi/10.1155/2024/5300908" target="_blank">Read Here</a>
+                </li>
+            </ul>
         </section>
 
         <section id="conference" class="container">
             <h2>Conference Papers</h2>
-            <ul>
-                <li><strong>Deep Learning for Detecting Manufacturing Defects Using CNNs</strong> <br> <em>Springer</em> - <a href="https://link.springer.com/chapter/10.1007/978-981-97-4700-9_21" target="_blank">Read Here</a></li>
-                <li><strong>Credit Card Default Prediction Using Machine Learning</strong> <br> <em>IEEE</em> - <a href="https://ieeexplore.ieee.org/document/10420380" target="_blank">Read Here</a></li>
+            <ul class="pub-list">
+                <li><strong>Deep Learning for Detecting Manufacturing Defects Using CNNs</strong><br>
+                    <em>Springer</em> –
+                    <a href="https://link.springer.com/chapter/10.1007/978-981-97-4700-9_21" target="_blank">Read Here</a>
+                </li>
+                <li><strong>Credit Card Default Prediction Using Machine Learning</strong><br>
+                    <em>IEEE</em> –
+                    <a href="https://ieeexplore.ieee.org/document/10420380" target="_blank">Read Here</a>
+                </li>
             </ul>
         </section>
 
         <section id="preprints" class="container">
             <h2>Preprints</h2>
-            <ul>
-                <li><strong>Detection of Malware and Adware Using Machine Learning: A Practical Approach</strong> <br> <em>Research Square</em> - <a href="https://www.researchsquare.com/article/rs-4219382/v1" target="_blank">Read Here</a></li>
+            <ul class="pub-list">
+                <li><strong>Detection of Malware and Adware Using Machine Learning: A Practical Approach</strong><br>
+                    <em>Research Square</em> –
+                    <a href="https://www.researchsquare.com/article/rs-4219382/v1" target="_blank">Read Here</a>
+                </li>
             </ul>
         </section>
 
         <section id="dissertation" class="container">
             <h2>Thesis/Dissertation</h2>
-            <ul>
-                <li><strong>AI-Driven Approaches to Quantum Error Correction: Bridging Quantum Computing and Machine Learning</strong> <br><b>Bachelor's Thesis [In Progress]</b></li>
+            <ul class="pub-list">
+                <li><strong>AI-Driven Approaches to Quantum Error Correction: Bridging Quantum Computing and Machine Learning</strong><br>
+                    <b>Bachelor's Thesis</b>
+                </li>
             </ul>
         </section>
-        
     </main>
 
-    <!-- <footer>
+    <footer>
         <div class="container">
             <p>&copy; 2024 Kanishk Bakshi. All rights reserved.</p>
         </div>
-    </footer> -->
+    </footer>
 </body>
 </html>

@@ -6,34 +6,36 @@
     <link rel="icon" type="image/png" href="Images/Favicon.png">
     <title>CV - Kanishk Bakshi</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <h1><a href="index.html">Kanishk Bakshi - CV</a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1><a href="index.html">Kanishk Bakshi</a></h1>
+            <div class="subtitle">Curriculum Vitae</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Main Content Section -->
     <main>
         <div class="container">
-            <section id="cv-section">
-                <h2>My CV</h2>
+            <section id="cv-section" style="margin-top:2.5rem;">
+                <h2 style="color:var(--primary-color); margin-bottom:1.2rem;">
+                    <i class="fas fa-file-alt section-icon"></i> My CV
+                </h2>
                 <p>Below is my CV. You can view or download it:</p>
-                
-                <!-- Embed PDF using object -->
-                <object data="Files/cv.pdf" type="application/pdf" width="100%" height="600px">
+                <object data="Files/cv.pdf" type="application/pdf" width="100%" height="600px" style="border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.07);">
                     <p>Your browser does not support PDFs. <a href="Files/cv.pdf" download>Download the CV</a></p>
                 </object>
-
-                <!-- Fallback message if the PDF does not load -->
-                <p>If the PDF does not load, you can download it directly from the link below:</p>
+                <p style="margin-top:1.2rem;">If the PDF does not load, you can download it directly from the link below:</p>
                 <a href="Files/cv.pdf" download="Kanishk_Bakshi_CV.pdf" class="btn-primary">Download CV</a>
             </section>
         </div>
@@ -41,7 +43,10 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>"According to all aerodynamic laws, the bumblebee cannot fly because its body weight is not in the right proportion to its wingspan." <br> ~ Mary Kay Ash</p>
+        <p>
+            "According to all aerodynamic laws, the bumblebee cannot fly because its body weight is not in the right proportion to its wingspan." <br>
+            <span style="font-size:1rem; color:var(--secondary-color);">~ Mary Kay Ash</span>
+        </p>
     </footer>
 </body>
 </html>
